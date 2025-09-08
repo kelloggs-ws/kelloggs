@@ -9,7 +9,7 @@ export default function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("http://localhost:8000/check_cart", {
+      const res = await fetch("https://ddc66e7c4a0c.ngrok-free.app/check_cart", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ user, query }),
